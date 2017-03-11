@@ -1,0 +1,40 @@
+@font-face {
+    font-family: open-sans;
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: open-sans-bold;
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+p {
+  letter-spacing: 0.7px;
+}
+
+body {
+  font-family: open-sans;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../img/cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.dark-cover {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+nav ul {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 30px;
+}
