@@ -1,0 +1,199 @@
+.container-full {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+
+.language .geo,
+.language .eng,
+.language .rus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 22px;
+}
+
+.language .geo {
+    background: url("../img/Geo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.language .eng {
+    background: url("../img/UK.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.language .rus {
+    background: url("../img/Rus.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 995px) {
+    .language .geo,
+    .language .eng,
+    .language .rus {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .language .geo,
+    .language .eng,
+    .language .rus {
+        float: none;
+    }
+}
+
+
+/*logo*/
+
+.navbar-header .navbar-brand {
+    height: inherit;
+    padding: inherit;
+}
+
+
+/*center navigation*/
+
+.navbar,
+.navbar-default {
+    /*padding: 15px;*/
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+}
+
+.navbar-nav {
+    padding: 10px 0;
+}
+
+.collapsed,
+.navbar-toggle {
+    margin: 22px 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+h2 {
+    text-align: center;
+}
+.hotels-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/main.jpg");
+    background-size: cover;
+    position: relative;
+    float: left;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+}
+
+/*
+
+.tour-details {
+	margin-top: 50px;
+}
+
+.tour-details .thumbnail{
+	background-color: #f6f7f8
+}
+
+
+.tour-img {
+	padding: 1px;
+	padding-right: 15px;
+
+}
+
+.tour-details .caption{
+	margin-top: -10px;
+}
+
+@media only screen and (max-width: 550px) {
+   .tour-img, .tour-details .caption{ margin: 0 auto }
+   .tour-img {width: 100%; padding-right:1px;}
+
+}
+
+@media only screen and (min-width: 450px) {
+   .tour-img {min-width: 300px;}
+}
+*/
+
+.hotels-thumbnail img {
+    padding-right: 10px;
+    /*min-height:20px; */
+    height: 184px;
+}
+
+.hotels-thumbnail {
+    margin-top: 15px;
+    /*height: 260px;*/
+}
+
+.hotels-thumbnail button {
+    float: right;
+    margin-top: -25px;
+}
+
+ @media screen and (max-width: 415px){
+    .hotels-thumbnail p {
+    margin: 0 0 28px;
+}
+.trip-form{
+        margin-top: 30px;
+}
+}
+.hotels-thumbnail {
+    border: 10px solid #ffff33;
+}
+
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+    margin-top: 50px;
+    background-color: #d0edd0;
+    border-top: 2px solid #5a8;
+    bottom: 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 0 20px 0;
+}
+
+footer li {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.contact-us li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer li:hover {
+  opacity: .8;
+}

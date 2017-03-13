@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: open-sans-italic;
-    src: url("../fonts/OpenSans-italic.ttf");
+    src: url("../fonts/OpenSans-Italic.ttf");
 }
 
 p {
@@ -62,7 +62,15 @@ nav a {
   letter-spacing: .8px;
   color: #ddd;
   opacity: .8;
+  border-bottom: 2px solid rgba(200,255,255, 0);
+  webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  padding: 0 5px 5px 5px;
+}
 
+nav a:hover{
+  color: #aff;
+  border-bottom: 2px solid rgba(200,255,255, 1);
 }
 
 .say-hi {
@@ -131,8 +139,127 @@ nav a {
   to{opacity: 1;}
 }
 
+.my-work {
+  margin-top: 50px;
+}
+
+.my-work h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #767;
+}
+
+.works {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works li {
+  display: inline-block;
+  flex: 1;
+  min-width: 41%;
+  margin: 2%;
+  height: 20vw;
+  color:red;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative!important;
+  webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.works a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
 
+.work-info {
+  position: absolute!important;
+  color: #567;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 23px;
+  font-weight: bold;
+  opacity: .0;
+  webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(200, 200, 200, .5);
+}
+
+.work-info:hover {
+  opacity: 1;
+}
+
+.work-info p {
+  margin: 7px 0;
+}
+
+.work-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.works li:hover .work-img {
+  height: 12vw;
+  width: 50%;
+  opacity: 0;
+}
+
+.uncoveredboss {
+  background-image: url(../img/uncoveredboss.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.terranuova {
+  background-image: url(../img/terranuova.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stellar {
+  background-image: url(../img/stellar.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dgs {
+  background-image: url(../img/digital-services.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.issa-sports {
+  background-image: url(../img/issa-sport.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mate-tours {
+  background-image: url(../img/matetour.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 

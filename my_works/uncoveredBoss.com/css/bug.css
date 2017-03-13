@@ -1,0 +1,163 @@
+
+/*---------------------bagebiiii------------------------*/
+
+#overall {
+  max-height: 250px; 
+  max-width: 250px;
+}
+
+
+.view-manager-profile {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 42px;
+    margin-bottom: 15px;
+}
+.view-manager-profile p {
+    font-size: 18px;
+    
+    padding: 12px 12px 1px 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+
+
+
+.view-manager-profile a {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #d3d3d3!important;
+    color: #424242!important
+    
+}
+.view-manager-profile a:hover {
+    background-color: #3a9fe5!important;
+    transition: all 500ms ease-in-out;
+    color: #fff!important;
+}
+
+.main-container ul li button {
+  outline: none;
+}
+
+
+/*-----*/
+
+.search-input {
+  border:none;
+  opacity: .92
+}
+
+.search-input:focus {
+  opacity: 1;
+}
+
+.landing-area-select button {
+  border-width: 0 1px!important;
+  opacity: .92
+}
+
+.landing-area-select button:hover {
+  opacity: 1;
+}
+
+.landing-area-title .landing-area-paragraph {
+  opacity: .85;
+}
+
+.main-page-text {
+  background-color: #f2f2f2;
+}
+
+
+.add-manager-form .container {
+  margin-bottom: 30px;
+}
+
+
+.add-manager-form button {
+  background-color: #d3d3d3;
+  transition: all 500ms ease-in-out;
+}
+
+
+.add-manager-form button:hover {
+  background-color: #3a9fe5;
+  color: #fff;
+}
+
+
+
+#blog-favorite {
+  padding: 4px;
+}
+
+.comments-section {
+    width: auto;
+}
+
+
+.body { 
+  word-break: break-all; 
+  /*es mgoni yvelgan gvchirdeba da imitoa bodyshi. 1 sityva roca dzaan didia anlinki roa rogorc temos
+  gverdze magas abreaklinebs tu sazgvrebs cdeba*/
+}
+
+
+.top-rank .data-table .top-rank-search .top-rank-search-managers input[type="search"] {
+  padding: 4px;
+}
+
+/*top rankis serchi da button gavasqele cota dzaan wvrili iyo*/
+
+.top-rank .data-table .top-rank-search .top-rank-search-managers button {
+    padding: 3.4px 11px !important;
+    outline: none;
+}
+
+
+
+.rate-modal-view {
+  margin: 0 auto;
+}
+
+
+#popupRate {
+  /*rac giweria yvela washale da eseni chawere*/
+  position: relative;
+  margin-top: 2%;
+  padding: 0 15px;
+}
+
+/*mere am popupze giweria media screen 761nda 768d gadaakete*/
+
+.rate-modal-view .rate-title span { /*es screen max 768px*/
+  top: -27px!important;
+}
+
+
+.rate-comment {
+  width: auto; /*screen 768px ze*/
+      display: block;
+    margin: 0 auto;
+}
+
+
+
+.rate-container textarea {  /*screen 768px ze*/
+  display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.rate-comment h3 { /*screen 768px ze*/
+    display: inline-block;
+}
+
+
+
+
+/*-------------------------bugs css end-------------------------*/
