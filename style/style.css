@@ -8,6 +8,11 @@
     src: url("../fonts/OpenSans-Bold.ttf");
 }
 
+@font-face {
+    font-family: open-sans-italic;
+    src: url("../fonts/OpenSans-italic.ttf");
+}
+
 p {
   letter-spacing: 0.7px;
 }
@@ -19,22 +24,123 @@ body {
 header {
   height: 100vh;
   background-image: url(../img/cover.jpg);
+  /*background-color: #555;*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .dark-cover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.29);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+nav {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 nav ul {
   float: right;
+  margin-top: 30px;
+  margin-right: 50px;
 }
 
 nav li {
   display: inline-block;
-  margin: 0 15px;
-  font-size: 30px;
+  margin: 0 25px;
+  font-size: 22px;
+  text-transform: uppercase;
 }
+
+nav a {
+  letter-spacing: .8px;
+  color: #ddd;
+  opacity: .8;
+
+}
+
+.say-hi {
+  display: inline-block;
+  margin: 0 auto;
+  width: 520px;
+  height: 130px;
+}
+
+.say-hi span {
+  font-family: open-sans-italic;
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+}
+
+.hi-there {
+  font-size: 40px;
+  color: #eee;
+  text-align: center;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 520px;
+  animation: type 1.5s steps(60, end);
+  height: 60px;
+}
+
+
+.hi-there:nth-child(2){
+  animation: type2 3s steps(60, end);
+  width: 500px;
+}
+
+.my-pic {
+  opacity: .0;
+  webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  height: 105px;
+  margin-top: 40px;
+}
+
+.profile-pic {
+  background-image: url(../img/me.jpg);
+  height: 102px;
+  width: 102px;
+  background-position: top;
+  background-size: 195%;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: 1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div
