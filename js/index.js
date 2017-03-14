@@ -12,5 +12,4 @@ setTimeout(function(){ displayProfilePicture() }, 3000);
 
 function displayProfilePicture(){
   document.getElementById("my-pic").style.cssText="opacity:1; display:block";
-  console.log("shedis aq eschemisa");
 }

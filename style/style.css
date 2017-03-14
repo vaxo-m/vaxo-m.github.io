@@ -34,10 +34,17 @@ header {
 .dark-cover {
   background-color: rgba(0, 0, 0, 0.29);
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 nav {
@@ -65,6 +72,7 @@ nav a {
   opacity: .8;
   border-bottom: 2px solid rgba(200,255,255, 0);
   webkit-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   padding: 0 5px 5px 5px;
 }
@@ -96,19 +104,22 @@ nav a:hover{
   overflow: hidden;
   display: inline-block;
   width: 520px;
-  animation: type 1.5s steps(60, end);
+  -webkit-animation: type 1.5s steps(60, end);
+          animation: type 1.5s steps(60, end);
   height: 60px;
 }
 
 
 .hi-there:nth-child(2){
-  animation: type2 3s steps(60, end);
+  -webkit-animation: type2 3s steps(60, end);
+          animation: type2 3s steps(60, end);
   width: 500px;
 }
 
 .my-pic {
   opacity: .0;
   webkit-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   height: 105px;
   margin-top: 40px;
@@ -125,14 +136,28 @@ nav a:hover{
   margin: 0 auto;
 }
 
+@-webkit-keyframes type{
+  from { width: 0; }
+}
+
 @keyframes type{
   from { width: 0; }
+}
+
+@-webkit-keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
 }
 
 @keyframes type2{
   0%{width: 0;}
   50%{width: 0;}
   100%{ width: 100; }
+}
+
+@-webkit-keyframes blink{
+  to{opacity: 1;}
 }
 
 @keyframes blink{
@@ -153,15 +178,21 @@ nav a:hover{
   width: 80%;
   margin: 0 auto;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   webkit-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
 .works li {
   display: inline-block;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   min-width: 41%;
   margin: 2%;
   height: 20vw;
@@ -170,15 +201,23 @@ nav a:hover{
   border-radius: 5px;
   position: relative!important;
   webkit-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
 .works a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   webkit-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -189,14 +228,24 @@ nav a:hover{
   top: 0px;
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 23px;
   font-weight: bold;
   opacity: .0;
   webkit-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
   background-color: rgba(200, 200, 200, .5);
 }
@@ -214,6 +263,7 @@ nav a:hover{
   width: 100%;
   border-radius: 5px;
   webkit-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
