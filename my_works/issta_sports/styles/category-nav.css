@@ -1,0 +1,39 @@
+.category-nav {
+	height: 48px;
+	background-color: #008d00;
+	border-top:2px solid #bbb;
+	border-bottom:4px solid #474747;
+}
+
+.category-nav ul {
+	padding-top: 17px;
+
+}
+
+.category-nav li {
+	float: right;
+	padding: 0 2.54%;
+	border-right:1px dotted #80c680;
+}
+
+.category-nav li:last-child{
+	border-left:1px dotted #80c680;
+}
+
+.category-nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.category-nav a:hover {
+	opacity: .8;
+	color: #dfd;
+}
+
+.category-nav i {
+	color: #fff;
+	font-size: 8px;
+	position: relative;
+	bottom: 3px;
+	right: 3px;
+}

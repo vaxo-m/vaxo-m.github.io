@@ -1,0 +1,38 @@
+.about{
+	height: 245px;
+	background-color: #ffffff
+}
+.seo{
+	padding-top: 30px;
+}
+
+.social {
+	height: 175px;
+	width: 31.3%;
+	float: right;
+	background-color: #aab;
+	margin-left: 40px;
+}
+
+.para {
+	text-align: right;
+	color: #535353;
+}
+
+.para h2 {
+	font-size: 22px;
+	color: #535353;
+	margin-bottom: 20px;
+}
+.para p{
+	font-size: 12px;
+	color: #535353;
+	line-height: 1.5em;
+}
+
+
+
+
+
+
+

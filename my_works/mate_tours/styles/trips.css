@@ -1,0 +1,209 @@
+.container-full {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+
+.language .geo,
+.language .eng,
+.language .rus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 22px;
+}
+
+.language .geo {
+    background: url("../img/Geo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.language .eng {
+    background: url("../img/UK.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.language .rus {
+    background: url("../img/Rus.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 995px) {
+    .language .geo,
+    .language .eng,
+    .language .rus {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .language .geo,
+    .language .eng,
+    .language .rus {
+        float: none;
+    }
+}
+
+
+/*logo*/
+
+.navbar-header .navbar-brand {
+    height: inherit;
+    padding: inherit;
+}
+
+
+/*center navigation*/
+
+.navbar,
+.navbar-default {
+    /*padding: 15px;*/
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+}
+
+.navbar-nav {
+    padding: 10px 0;
+}
+
+.collapsed,
+.navbar-toggle {
+    margin: 22px 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+.trips-background {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/main.jpg");
+    background-size: cover;
+    position: relative;
+    float: left;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+}
+
+
+/*Trips Section*/
+
+
+.trips-thumbnail img {
+    padding-right: 10px;
+    /*min-height:20px; */
+    height: 184px;
+}
+
+.trips-thumbnail {
+    margin-top: 15px;
+    border: 2px solid #567!important;
+    padding: 9px;
+}
+
+.trips-thumbnail button {
+    float: right;
+    margin-top: -25px;
+}
+
+ @media screen and (max-width: 415px){
+    .trips-thumbnail p {
+    margin: 0 0 28px;
+}
+.trip-form{
+        margin-top: 30px;
+}
+}
+
+.trips-thumbnail {
+    border: 10px solid #ffff33;
+}
+
+
+
+.trips-caption form {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border-top: 1px dotted gray;
+}
+
+
+.trip-form {
+    width: 100%;
+    overflow: hidden;
+}
+
+@media all and (max-width:480px) {
+    .trip-form {
+        overflow: visible;
+    }
+}
+
+.trip-form button {
+    padding-top: 8px;
+    /*float: right;*/
+}
+
+.form-group:last-of-type {
+    margin-bottom: 40px;
+}
+
+.container form .submitForm {
+    margin-top: 20px;
+}
+
+.container form .inputContainer {
+    margin-top: 30px;
+}
+
+
+
+/*Footer*/
+
+footer {
+    margin-top: 50px;
+    background-color: #d0edd0;
+    border-top: 2px solid #5a8;
+    bottom: 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 0 20px 0;
+}
+
+footer li {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.contact-us li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer li:hover {
+  opacity: .8;
+}

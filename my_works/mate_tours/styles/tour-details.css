@@ -1,0 +1,242 @@
+.container-full {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.language .geo,
+.language .eng,
+.language .rus {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 22px;
+}
+
+.language .geo {
+    background: url("../img/Geo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.language .eng {
+    background: url("../img/UK.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.language .rus {
+    background: url("../img/Rus.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 995px) {
+    .language .geo,
+    .language .eng,
+    .language .rus {
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .language .geo,
+    .language .eng,
+    .language .rus {
+        float: none;
+    }
+}
+
+
+/*logo*/
+
+.navbar-header .navbar-brand {
+    height: inherit;
+    padding: inherit;
+}
+
+
+/*center navigation*/
+
+.navbar,
+.navbar-default {
+    /*padding: 15px;*/
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+}
+
+.navbar-nav {
+    padding: 10px 0;
+}
+
+.collapsed,
+.navbar-toggle {
+    margin: 22px 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+
+.tour-details-background {
+    background-image: url("../img/svaneti1.jpg");
+    min-height: 80vh;
+    background-size: cover;
+    background-position: 0 73%;
+    background-repeat: no-repeat;
+}
+
+.tour-details {
+    margin-top: 50px;
+}
+
+.details-thumbnail {
+    background-color: #f6f7f8
+}
+
+.tour-img {
+    padding: 1px;
+    padding-right: 15px;
+}
+
+.about {
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .tour-img {
+        width: 100%;
+        padding-right: 1px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    .tour-img {
+        min-width: 300px;
+    }
+}
+
+.bolderer {
+    color: #444;
+    font-weight: 600;
+}
+
+.about-tour h4 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.simple-details {
+    border-right: 1px dotted #a5a4a5;
+}
+
+.photo-album{
+    text-align: center;
+}
+.photo-album span{
+    margin-right: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .simple-details {
+        border-right: none;
+    }
+}
+
+.simple-details {
+    /*border-right:1px dotted #545; */
+}
+
+.album-in-tour-details {
+    margin-top: 10px;
+}
+
+.det-alb-backg {}
+
+.det-alb-backg:hover {
+    background-color: #e9e9e9;
+}
+
+.book {
+    text-align: center;
+    color: #131;
+    margin-top: 40px;
+}
+
+
+/*----------------------------------------------*/
+
+.trip-form {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+
+.trip-form button {
+    padding-top: 8px;
+    /*float: right;*/
+}
+
+.form-group:last-of-type {
+    margin-bottom: 40px;
+}
+
+.container form .submitForm {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container form .inputContainer {
+    margin-top: 30px;
+}
+
+
+/*Footer*/
+
+footer {
+    margin-top: 50px;
+    background-color: #d0edd0;
+    border-top: 2px solid #5a8;
+    bottom: 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px 0 20px 0;
+}
+
+footer li {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.contact-us li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer li:hover {
+  opacity: .8;
+}

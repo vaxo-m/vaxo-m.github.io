@@ -1,0 +1,171 @@
+body {
+    font-family: arial;
+    min-width: 1190px;
+}
+
+.navigation {
+    height: 165px;
+}
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.top {
+    height: 110px;
+}
+
+.top-links {
+    height: 34px;
+    background-color: #f7f7f7;
+}
+
+.top-links ul {
+    padding-top: 10px;
+    font-size: 12pt;
+}
+
+.top-links li {
+    float: right;
+    padding: 0 16px;
+    border-left: 1px dotted #80c680;
+}
+
+.top-links li:last-child {
+    border-left: none;
+}
+
+.top-links li:first-child {
+    padding-right: 0;
+}
+
+.top-links li:nth-child(-n+3) > a {
+    color: #416ba1;
+}
+
+.top-links li:nth-child(4) > a {
+    color: #008d00;
+}
+
+.top-links li:last-child > a {
+    color: #f98702;
+}
+
+.top-links a {
+    text-decoration: none;
+}
+
+.top-hr {
+    margin: 0;
+    height: 3px;
+    background-color: #bbb;
+}
+
+.logo {
+    float: right;
+    margin-top: 20px;
+}
+.personal-area {
+    margin-top: 27px;
+    float: left;
+    display: inline-block;
+    color: #014a90;
+    height: 32px;
+    background-image: linear-gradient(-45deg, #e5e5e5 25%, transparent 25%, transparent 50%, #e5e5e5 50%, #e5e5e5 75%, transparent 75%, transparent);
+    -webkit-background-size: 4px 4px;
+    -moz-background-size: 4px 4px;
+    background-size: 4px 4px;
+  
+}
+ 
+.personal-area p{
+    display: inline-block;
+    margin-top: 7px;
+    padding: 0 20px;
+}
+
+.personal-area p:last-child {
+    border-right: 1px dotted #014a90;
+}
+
+
+.user-search i {
+    margin-left: 3px;
+    font-size: 11px;
+}
+
+.blue-dropdown i {
+    color: #014a90;
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+}
+
+.nav-bar {
+    height: 55px;
+    background-color: #f2f5f1;
+}
+
+.nav-bar ul {
+    padding-top: 20px;
+}
+
+.nav-bar li {
+    float: right;
+    padding: 0 21px;
+    border-right: 1px dotted #7d7d7d;
+    position: relative;
+}
+
+.nav-bar li:first-child {
+    border-right: none;
+}
+
+.nav-bar a:hover {
+    color: #008d00;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #535353;
+    width: 100%;
+}
+
+.under {
+    height: 5px;
+    width: 100%;
+    background-color: #008d00;
+    margin: 14px -22px 0 0;
+    position: absolute;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    bottom: 7px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #008d00;
+    position: relative;
+    margin: 0 auto;
+}
+
+.bottom-hr {
+    height: 5px;
+    background-color: #bbb;
+    margin-top: -5px;
+    border-top: 0px;
+}
+
+.nav-bar i {
+    color: #575757;
+    font-size: 8px;
+    position: relative;
+    bottom: 3px;
+    right: 3px;
+}
+
+

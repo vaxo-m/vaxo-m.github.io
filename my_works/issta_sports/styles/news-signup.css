@@ -1,0 +1,82 @@
+.news-signup {
+    height: 83px;
+    background-color: #474747;
+    width: 100%;
+}
+
+.envelope {
+    margin: 25px 17px 25px 2px;
+    display: inline-block;
+}
+
+.text {
+    width: 26.2%;
+    height: 50px;
+    vertical-align: top;
+    margin-top: 24px;
+    display: inline-block;
+    color: #fff;
+}
+
+.text h3 {
+    font-size: 18px;
+}
+
+.text p {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.sec-search {
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px 1.5%;
+    width: 46%;
+}
+
+.sec-search input {
+    height: 38px;
+    width: 74%;
+    color: #959595;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.sec-search button {
+    color: #fff;
+    font-size: 22px;
+    height: 38px;
+    width: 24.6%;
+    border-style: groove;
+    mask-type: 0;
+    vertical-align: top;
+    background-color: #008d00;
+    margin-right: 2px;
+    border-radius: 2px;
+}
+
+.sec-search button:active {
+    background-color: #46a34a;
+}
+
+.sec-search button:hover {
+    cursor: pointer;
+}
+
+.pics {
+    width: 200px;
+    float: left;
+    display: inline-block;
+}
+
+.pics img {
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin: 27px 10px;
+}
+
+.mytwitt {
+    height: 20px;
+    width: 20px;
+}
