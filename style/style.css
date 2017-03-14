@@ -194,7 +194,7 @@ nav a:hover{
       -ms-flex: 1;
           flex: 1;
   min-width: 41%;
-  margin: 2%;
+  margin: 20px;
   height: 20vw;
   color:red;
   border: 1px solid #ccc;
@@ -226,6 +226,7 @@ nav a:hover{
   position: absolute!important;
   color: #567;
   top: 0px;
+  left: 0px;
   height: 100%;
   width: 100%;
   display: -webkit-box;
