@@ -19,6 +19,7 @@ p {
 
 body {
   font-family: open-sans;
+  background-color: #f5f5f5;
 }
 
 header {
@@ -120,7 +121,6 @@ nav a:hover{
   background-position: top;
   background-size: 195%;
   border-radius: 50%;
-  margin: 0 auto;
   display: inline-block;
   margin: 0 auto;
 }
@@ -155,6 +155,8 @@ nav a:hover{
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
+  webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .works li {
@@ -176,6 +178,8 @@ nav a:hover{
   align-items: center;
   justify-content: center;
   height: 100%;
+  webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 
@@ -260,6 +264,80 @@ nav a:hover{
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.about-me {
+  border-top: 2px solid #ccc;
+  margin: 50px 0;
+}
+
+.about-me h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #566;
+  margin-top: 50px;
+}
+
+.my-photo {
+  margin-top: 50px;
+}
+
+.about-me .profile-pic {
+  display: block;
+}
+
+.text-about-me {
+  margin-top: 50px;
+}
+
+.text-about-me p {
+  width: 600px;
+  color: #445;
+  font-weight: bold;
+  letter-spacing: .8px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 999px) {
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    float: none;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  nav ul li {
+    font-size: 20px;
+    margin: 0 18px;
+  }
+
+  .work-info {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+
 
 
 
