@@ -17,6 +17,10 @@ p {
   letter-spacing: 0.7px;
 }
 
+* {
+  -webkit-font-smoothing:antialiased;
+}
+
 body {
   font-family: open-sans;
   background-color: #f5f5f5;
@@ -25,7 +29,7 @@ body {
 header {
   height: 100vh;
   background-image: url(../img/background.jpg);
-  /*background-color: #555;*/
+  min-height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,12 +43,12 @@ header {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 nav {
@@ -55,14 +59,14 @@ nav {
 
 nav ul {
   float: right;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-right: 50px;
 }
 
 nav li {
   display: inline-block;
   margin: 0 25px;
-  font-size: 22px;
+  font-size: 17px;
   text-transform: uppercase;
 }
 
@@ -85,8 +89,8 @@ nav a:hover{
 .say-hi {
   display: inline-block;
   margin: 0 auto;
-  width: 520px;
-  height: 130px;
+  width: 390px;
+  height: 100px;
 }
 
 .say-hi span {
@@ -96,33 +100,33 @@ nav a:hover{
 }
 
 .hi-there {
-  font-size: 40px;
+  font-size: 30px;
   color: #eee;
   text-align: center;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 0;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  width: 520px;
-  -webkit-animation: type 1.5s steps(60, end);
-          animation: type 1.5s steps(60, end);
-  height: 60px;
+  width: 390px;
+  -webkit-animation: type 1.7s steps(60, end);
+          animation: type 1.7s steps(60, end);
+  height: 40px;
 }
 
 
 .hi-there:nth-child(2){
-  -webkit-animation: type2 3s steps(60, end);
-          animation: type2 3s steps(60, end);
-  width: 500px;
+  -webkit-animation: type2 3.4s steps(60, end);
+          animation: type2 3.4s steps(60, end);
+  width: 370px;
 }
 
 .my-pic {
   opacity: .0;
-  webkit-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
+  webkit-transition: all 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
   transition: all 300ms ease-in-out;
   height: 105px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .profile-pic {
@@ -248,7 +252,7 @@ nav a:hover{
   webkit-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  background-color: rgba(200, 200, 200, .5);
+  background-color: rgba(200, 170, 200, .5);
 }
 
 .work-info:hover {
@@ -330,10 +334,27 @@ nav a:hover{
 
 .my-photo {
   margin-top: 50px;
+  height: 115px;
+  display: flex;
+  align-items: center;
 }
 
 .about-me .profile-pic {
   display: block;
+  webkit-transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.about-me .profile-pic:hover {
+  padding: 5px;
+}
+
+.profile-pic-outer {
+  margin: 0 auto;
+  border: 1px double #565;
+  border-radius: 50%;
+  padding: 2px;
 }
 
 .text-about-me {
@@ -343,21 +364,83 @@ nav a:hover{
 .text-about-me p {
   width: 600px;
   color: #445;
-  font-weight: bold;
   letter-spacing: .8px;
   text-align: center;
   margin: 0 auto;
   line-height: 25px;
 }
 
+footer {
+  background-color: #e5f1f2;
+  display: flex;
+  border-top: 1px solid #add;
+}
+
+footer ul {
+  display: inline-block;
+  margin: 5px auto;
+  width: 550px;
+  padding: 30px 0;
+  text-align: center;
+  position: relative;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer a {
+  color: #444;
+  padding: 3px 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+footer a:hover {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+.mail {
+  cursor: pointer;
+}
+
+.js-copytextarea {
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+}
+
+.copy-email {
+  position: absolute;
+  width: 180px;
+  top: 0px;
+  left: 50px;
+}
 
 
+.copy-info {
+  font-size: 13px;
+  opacity: .5;
+  display: inline-block;
+  padding: 3px;
+  border-bottom: 1px solid #ada;
+}
 
-
-
-
-
-
+.copy-arrow {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid rgba(212,232,212, 1);
+  margin: 0 auto;
+}
 
 
 
@@ -374,11 +457,95 @@ nav a:hover{
   }
 
   nav ul li {
-    font-size: 20px;
     margin: 0 18px;
   }
 
   .work-info {
     font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    background-image: none;
+    background-color: #979daf;
+  }
+
+  .works li {
+    min-width: 51%;
+    height: 39vw;
+  }
+
+  .work-img {
+    opacity: .4;
+  }
+
+  .works li:hover .work-img {
+    opacity: .4;
+    height: 39vw;
+    width: 100%;
+  }
+
+  .work-info {
+    background: none;
+    opacity: 1;
+    font-size: 25px;
+    text-shadow: 0px 1px #dee;
+  }
+
+  .text-about-me p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .works {
+    width: 96%;
+  }
+
+  .work-info {
+    font-size: 20px;
+  }
+
+  .works li {
+    height: 41vw;
+  }
+
+  .works li:hover .work-img {
+    height: 41vw;
+  }
+
+  .copy-email {
+    display: none;
+    left: 10px
+  }
+
+  .copy-arrow {
+    display: none;
+  }
+
+  .nav li {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+  }
+
+  .say-hi {
+    width: 330px;
+  }
+
+  .hi-there {
+    font-size: 25px;
+    width: 330px;
+  }
+
+  .hi-there:nth-child(2) {
+    width: 330px;
   }
 }

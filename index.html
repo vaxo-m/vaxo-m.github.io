@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vaxo Maisuradze's Personal Page</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
@@ -11,9 +12,9 @@
       <div class="dark-cover">
         <nav>
           <ul>
-            <li><a href="#">my work</a></li>
-            <li><a href="#">about me</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="#my-work">my work</a></li>
+            <li><a href="#about-me">about me</a></li>
+            <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
         <div class="say-hi">
@@ -25,7 +26,7 @@
         </div>
       </div>
     </header>
-    <div class="my-work">
+    <div class="my-work" id="my-work">
       <h1>my work</h1>
       <ul class="works">
         <li><a href="my_works/uncoveredBoss.com/index.html" target="_blank">
@@ -70,22 +71,33 @@
         </a></li>
       </ul>
     </div>
-    <div class="about-me">
+    <div class="about-me" id="about-me">
       <h1>about me</h1>
       <div class="my-photo">
-        <div class="profile-pic"></div>
+        <div class="profile-pic-outer">
+          <div class="profile-pic"></div>
+        </div>
       </div>
       <div class="text-about-me">
         <p>Hi everyone, i am web & mobile developer from georgia.
            I have more than 4 years of experience in web & mobile development. I love working on startups.
-            My hobbies are music, science and playing tennis and football.</p>
+            My hobbies are music, science and playing football.</p>
       </div>
     </div>
-    <footer>
-
+    <footer id="contact">
+      <ul>
+        <li><a class="mail" id="mail" title="m.vaxo@yahoo.com">E-mail</a></li>
+        <li><a href="https://github.com/vaxo-m" target="_blank">Github</a></li>
+        <li><a href="https://www.upwork.com/freelancers/~01bd55d72cf2ed7341" target="_blank">Upwork</a></li>
+        <li><a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a></li>
+        <li class="copy-email" id="copy-email">
+          <div class="copy-info" id="copy-info"></div>
+          <div class="copy-arrow"></div>
+        </li>
+      </ul>
+      <textarea class="js-copytextarea">m.vaxo@yahoo.com</textarea>
     </footer>
     <script type="text/javascript" src="js/index.js">
-
     </script>
   </body>
 </html>
