@@ -397,7 +397,7 @@ header {
 
 .work-samples {
   background: rgb(183,176,163);
-  height: 100vh;
+  min-height: 100vh;
   min-height: 745px;
   color: #fff;
   background: -moz-linear-gradient(-45deg, rgba(19,99,201, .99) 0%, rgba(70,109,175, 1)20%, rgba(120,100,170, 1) 40%, rgba(150,110,150, 1) 60%, rgba(200,120,90, 1) 80% );
@@ -962,7 +962,89 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .intro-text {
+    width: 70%;
+    margin: 0 auto;
+  }
 
+  .all-features li {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .work-samples {
+    padding-bottom: 30px;
+  }
+
+  .work-types-menu li {
+    margin: 0 10px;
+  }
+
+  .work-types-menu li a {
+    padding: 8px 2.5vw 19px;
+    border: none;
+  }
+
+  .slider-info {
+    text-align: center;
+  }
+
+  .control {
+    display: none;
+  }
+
+  .about-work button:first-child {
+    margin-bottom: 0px;
+  }
+
+  .onClick-navigate {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .company-post {
+    height: auto;
+  }
+
+  .build-products {
+    height: 63vh;
+    min-height: 390px;
+  }
+
+  .productive {
+    height: 35vh;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 20px;
+    min-height: 200px;
+  }
+
+  .productive-img {
+    height: 100%;
+    width: 42%;
+    display: inline-block;
+  }
+
+  .products-text {
+    display: inline-block;
+    width: 54%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .products-text .products-title h4 {
+    margin-top: 30px!important;
+  }
+
+  .post-text p {
+    line-height: 13px;
+    margin-bottom: 20px;
+  }
+
+  .build-products-body {
+    padding: 0 20px;
+  }
 }
 
 
