@@ -529,6 +529,10 @@ footer a:hover {
     font-size: 16px;
     margin: 0 15px;
   }
+
+  textarea {
+    pointer-events: none;
+  }
 }
 
 @media screen and (max-width: 450px) {
