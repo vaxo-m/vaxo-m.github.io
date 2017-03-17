@@ -36,7 +36,7 @@ header {
 }
 
 .dark-cover {
-  background-color: rgba(0, 0, 0, 0.29);
+  background-color: none;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,14 +59,14 @@ nav {
 
 nav ul {
   float: right;
-  margin-top: 20px;
+  margin-top: 35px;
   margin-right: 50px;
 }
 
 nav li {
   display: inline-block;
   margin: 0 25px;
-  font-size: 17px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -252,7 +252,7 @@ nav a:hover{
   webkit-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  background-color: rgba(200, 170, 200, .5);
+  background-color: rgba(214, 230, 230, .5);
 }
 
 .work-info:hover {
@@ -341,9 +341,9 @@ nav a:hover{
 
 .about-me .profile-pic {
   display: block;
-  webkit-transition: all 200ms ease-in-out;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  webkit-transition: all 100ms ease-in-out;
+  -webkit-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .about-me .profile-pic:hover {
@@ -531,21 +531,45 @@ footer a:hover {
 }
 
 @media screen and (max-width: 450px) {
+  h1 {
+    font-size: 25px;
+  }
+
   nav ul li {
     display: block;
-    margin: 30px 0;
+    margin: 22px 0;
+    font-size: 14px
   }
 
   .say-hi {
-    width: 330px;
+    width: 280px;
+    margin-top: 35px;
   }
 
   .hi-there {
-    font-size: 25px;
-    width: 330px;
+    font-size: 22px;
+    width: 280px;
   }
 
   .hi-there:nth-child(2) {
-    width: 330px;
+    width: 280px;
+  }
+
+  .profile-pic {
+    height: 80px;
+    width: 80px;
+    background-size: 180%;
+  }
+
+  .work-info {
+    font-size: 13px;
+  }
+
+  footer a {
+    font-size: 14px;
+  }
+
+  .copy-email {
+    text-align: left;
   }
 }
