@@ -108,15 +108,19 @@ nav a:hover{
   overflow: hidden;
   display: inline-block;
   width: 390px;
-  -webkit-animation: type 1.7s steps(60, end);
-          animation: type 1.7s steps(60, end);
   height: 40px;
 }
 
+.animation-class1{
+  -webkit-animation: type 1.7s steps(60, end);
+  animation: type 1.7s steps(60, end);
+}
+.animation-class2 {
+  -webkit-animation: type2 3.4s steps(60, end);
+  animation: type2 3.4s steps(60, end);
+}
 
 .hi-there:nth-child(2){
-  -webkit-animation: type2 3.4s steps(60, end);
-          animation: type2 3.4s steps(60, end);
   width: 370px;
 }
 
@@ -124,7 +128,7 @@ nav a:hover{
   opacity: .0;
   webkit-transition: all 400ms ease-in-out;
   -webkit-transition: all 400ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  transition: all 400ms ease-in-out;
   height: 105px;
   margin-top: 30px;
 }
@@ -160,13 +164,6 @@ nav a:hover{
   100%{ width: 100; }
 }
 
-@-webkit-keyframes blink{
-  to{opacity: 1;}
-}
-
-@keyframes blink{
-  to{opacity: 1;}
-}
 
 .my-work {
   margin-top: 50px;
@@ -195,8 +192,8 @@ nav a:hover{
 .works li {
   display: inline-block;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   -ms-flex-preferred-size: 41%;
   flex-basis: 41%;
   margin: 20px;
@@ -271,6 +268,7 @@ nav a:hover{
   webkit-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
+  opacity: .9;
 }
 
 .works li:hover .work-img {
