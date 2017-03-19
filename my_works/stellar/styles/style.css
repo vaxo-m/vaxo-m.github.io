@@ -491,6 +491,7 @@
       -ms-flex: 1;
           flex: 1;
   margin-top: 4vw;
+  height: 100%;
 }
 
 .koral-container {

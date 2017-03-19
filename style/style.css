@@ -278,21 +278,21 @@ nav a:hover{
 }
 
 .uncoveredboss {
-  background-image: url(../img/uncoveredboss.png);
+  background-image: url(../img/uncoveredboss-min.PNG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .terranuova {
-  background-image: url(../img/terranuova.png);
+  background-image: url(../img/terranuova-min.PNG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .stellar {
-  background-image: url(../img/stellar.png);
+  background-image: url(../img/stellar-min.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -305,8 +305,8 @@ nav a:hover{
   background-repeat: no-repeat;
 }
 
-.issa-sports {
-  background-image: url(../img/issa-sport.png);
+.lunchmenu {
+  background-image: url(../img/lunch-min.PNG);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -414,6 +414,7 @@ footer a:hover {
   position: absolute;
   opacity: 0;
   left: 0px;
+  z-index: -1;
 }
 
 .copy-email {
