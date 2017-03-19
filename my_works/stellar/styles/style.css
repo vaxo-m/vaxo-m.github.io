@@ -91,7 +91,8 @@
   padding: 12px 17px;
   border-radius: 20px;
   height: 42px;
-  width: 107px;
+  width: 115px;
+  text-align: center;
 }
 
 .menu ul li:last-child:hover {
@@ -480,6 +481,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-top: 1px solid #eee;
+  height: calc(100vh - 200px);
 }
 
 
@@ -516,7 +518,7 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-image: url("../img/iphone.jpg");
+  background-image: url("../img/iPhone.jpg");
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;

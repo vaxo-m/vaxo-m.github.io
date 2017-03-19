@@ -182,6 +182,7 @@ header {
 
 .intro {
   height: 90vh;
+  min-height: 370px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,6 +212,7 @@ header {
   padding: 10px!important;
   color: #0879ea;
 }
+
 
 .intro button span {
   margin-right: 5px;
@@ -963,7 +965,7 @@ footer {
 
 @media screen and (max-width: 767px) {
   .intro-text {
-    width: 70%;
+    width: 95%;
     margin: 0 auto;
   }
 
@@ -977,11 +979,18 @@ footer {
   }
 
   .work-types-menu li {
-    margin: 0 10px;
+    margin: 0 10px 10px 0;
   }
 
   .work-types-menu li a {
-    padding: 8px 2.5vw 19px;
+    padding: 8px 1.5vw 19px;
+  }
+
+  .work-types-menu li a {
+    margin-bottom: 20px;
+  }
+
+  .work-types-menu li a:hover {
     border: none;
   }
 
@@ -1047,9 +1056,141 @@ footer {
   }
 }
 
+@media screen and (max-width: 605px) {
+  .footer-logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
+  .footer-content ul {
+    margin-bottom: 10px;
+    text-align: center;
+  }
 
+  .footer-content ul li {
+    margin-bottom: 10px;
+  }
 
+  .crewers ul li {
+    -ms-flex-preferred-size: 245px;
+    flex-basis: 245px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .introducing h2 {
+    font-size: 25px;
+    letter-spacing: .6px;
+  }
+
+  .introducing p {
+    padding: 0 10px;
+    text-align: center;
+    letter-spacing: 0.6px;
+  }
+
+  .introducing-buttons button {
+    letter-spacing: 0.6px;
+    padding: 6px 10px;
+    font-size: 13px;
+}
+
+  .introducing-buttons button:first-child {
+    margin-right: 15px;
+ }
+
+ .subscribe h5 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 18px;
+ }
+
+ .subscribe input {
+   width: 60%;
+   display: block;
+   margin: 0 auto;
+   margin-bottom: 15px;
+ }
+
+ .build-products {
+   height: auto;
+ }
+
+ .build-products-img {
+   height: 63vh;
+   width: 100%;
+ }
+
+ .build-products-body {
+    width: 100%;
+    padding-bottom: 20px;
+ }
+
+  .productive {
+    height: auto;
+  }
+
+  .productive-img {
+    width: 100%;
+    height: 34vh;
+  }
+
+  .products-text {
+    width: 100%;
+    position: inherit;
+    padding-bottom: 20px;
+  }
+
+  .introducing h2 {
+    line-height: 40px;
+  }
+
+  .introducing p {
+    line-height: 17px;
+  }
+
+  .introducing-buttons {
+    margin-top: 15px;
+  }
+
+  .all-features li {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+
+    .navbar-brand span {
+      font-size: 21px;
+    }
+
+  .introducing h2 {
+    font-family: open-sans;
+    letter-spacing: .7px;
+    font-size: 23px;
+  }
+
+  .intro {
+    min-height: 390px;
+  }
+
+  .intro h3 {
+    margin-bottom: 25px;
+  }
+
+  .about-work button {
+    display: block;
+    margin: 10px auto 10px!important;
+  }
+
+  .introducing-buttons button {
+    display: block;
+    margin: 10px auto 10px!important;
+    width: 145px;
+  }
+}
 
 
 
