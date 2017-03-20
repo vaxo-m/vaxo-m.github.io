@@ -194,7 +194,7 @@ nav a:hover{
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -ms-flex-preferred-size: 41%;
+  -ms-flex-preferred-size: 29%;
   flex-basis: 29%;
   margin: 20px;
   height: 20vw;
@@ -278,14 +278,14 @@ nav a:hover{
 }
 
 .uncoveredboss {
-  background-image: url(../img/uncoveredboss-min.PNG);
+  background-image: url(../img/uncoveredboss-min.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .terranuova {
-  background-image: url(../img/terranuova-min.PNG);
+  background-image: url(../img/terranuova-min.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
