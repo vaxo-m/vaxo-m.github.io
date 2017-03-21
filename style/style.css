@@ -472,7 +472,9 @@ footer a:hover {
   }
 
   .works li {
-    min-width: 51%;
+    -webkit-flex-basis: 51%;
+    -ms-flex-preferred-size: 51%;
+    flex-basis: 51%;
     height: 39vw;
   }
 
