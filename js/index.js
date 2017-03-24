@@ -1,14 +1,8 @@
 
 window.onload = function(){
-  console.log("this is your maza faqa bitch!");
   document.getElementById("hi-there1").className +=" animation-class1";
   document.getElementById("hi-there2").className +=" animation-class2";
 }
-//
-// document.getElementById("header").onload = function(){
-//   console.log("yes yes yes motherfucker");
-// }
-
 
 setTimeout(function(){ displayProfilePicture() }, 3200);
 
