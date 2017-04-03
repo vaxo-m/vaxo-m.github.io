@@ -2,9 +2,28 @@
 window.onload = function(){
   document.getElementById("hi-there1").className +=" animation-class1";
   document.getElementById("hi-there2").className +=" animation-class2";
+  setTimeout(function(){ displayProfilePicture() }, 3200);
 }
 
-setTimeout(function(){ displayProfilePicture() }, 3200);
+$('.display-body').click(function() {
+  var i=0;
+  var opacity = 0;
+  slideOnClick(i, opacity);
+});
+
+function upOpacity(i, opacity){
+  opacity += 0.05;
+  i++;
+  slideOnClick(i,opacity);
+}
+
+function slideOnClick(i, opacity) {
+  if(i<21){
+    $("body").css({"opacity": opacity});
+    setTimeout(function(){ upOpacity(i, opacity) }, 35);
+  }
+}
+
 
 function displayProfilePicture(){
   document.getElementById("my-pic").style.cssText="opacity:1; display:block";
@@ -23,6 +42,7 @@ function clickAgain(){
   document.getElementById("copy-info").innerHTML = "Click to copy E-mail address";
   document.getElementById("copy-email").style.cssText="display:none";
 }
+
 
 var copyTextareaBtn = document.querySelector('.mail');
 copyTextareaBtn.addEventListener('click', function(event) {
