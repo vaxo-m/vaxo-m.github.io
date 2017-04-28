@@ -545,7 +545,6 @@ header {
 
 .about-work button:first-child {
   margin-right: 10px;
-  margin-bottom: 15px;
 }
 
 .onClick-navigate {
@@ -907,6 +906,10 @@ footer {
   .contact-join-btn {
     text-align: center;
     padding-bottom: 20px;
+  }
+
+  .about-work button:first-child {
+    margin-bottom: 15px;
   }
 }
 
